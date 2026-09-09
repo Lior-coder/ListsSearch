@@ -22,9 +22,7 @@ namespace ListsSearch
         public static void PrintLst(List<Food> foods)
         {
             foreach (Food food in foods)
-            {
                 Console.WriteLine(food.Name);
             }
         }
     }
-}
