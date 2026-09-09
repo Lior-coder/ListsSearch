@@ -27,7 +27,7 @@ namespace ListsSearch
             foods[0].vegetablesList = new List<Vegetable>() { vegetables["tomato"], vegetables["cucumber"] };
             foods[1].vegetablesList = new List<Vegetable>() { vegetables["onion"], vegetables["tomato"] };
             foods[2].vegetablesList = new List<Vegetable>() { vegetables["cucumber"] };
-            search = foods.FindAll(x => x.Cals <= 600 && x.Protein > 10 && x.vegetablesList.Contains(vegetables["cucumber"]));
+            search = foods.FindAll(x => x.Cals <= 600 && x.Protein >= 10 && x.vegetablesList.Contains(vegetables["tomato"]) && !x.vegetablesList.Contains(vegetables["cucumber"]));
             PrintLst(search);
 
 
