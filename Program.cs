@@ -13,10 +13,9 @@ namespace ListsSearch
         {
             List<Food> foods = new List<Food>();
             List<Food> search = new List<Food>();
-            foods.Add(new Food() { Name="falafel", Cals=200});
-            foods.Add(new Food() { Name = "pizza", Cals = 400 });
-            foods.Add(new Food() { Name = "shawarma", Cals = 1000
-            });
+            foods.Add(new Food() { Name = "falafel", Cals = 200, Protein = 10});
+            foods.Add(new Food() { Name = "pizza", Cals = 400, Protein = 10 });
+            foods.Add(new Food() { Name = "shawarma", Cals = 1000, Protein = 26});
             search = foods.FindAll(x => x.Cals <= 600);
             PrintLst(search);
         }
