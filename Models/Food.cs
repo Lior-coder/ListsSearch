@@ -13,6 +13,6 @@ namespace ListsSearch.Models
         public int Protein { get; set; }
         public int Fats { get; set; }
         public int Carbs { get; set; }
-
+        public List<Vegetable> vegetablesList { get; set; }
     }
 }
